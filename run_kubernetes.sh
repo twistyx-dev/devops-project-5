@@ -13,4 +13,4 @@ kubectl run project-5 --image=$dockerpath --port=8000
 kubectl get pods
 # Step 4:
 # Forward the container port to a host
-kubectl proxy
+kubectl port-forward pods/project-5 8000:80 
